@@ -1,1 +1,105 @@
-font-family: "Outfit", sans-serif;
+:root {
+  width: 1440px;
+  height: 810px;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --extraDarkBlue: hsl(217, 54%, 11%);
+  --veryDarkBlue: hsl(216, 50%, 16%);
+  --darkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  background-color: var(--extraDarkBlue);
+}
+
+.cardMainBody {
+  display: flex;
+  flex-direction: column;
+  width: 274px;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--veryDarkBlue);
+}
+#cardBigPic {
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+  margin: 20px 0px 4px;
+}
+
+p {
+  font-size: 16px;
+  color: var(--softBlue);
+  font-weight: 300;
+  margin-bottom: 0px;
+  line-height: 24px;
+}
+#smallFooterPic {
+  border: 1px solid white;
+  width: 28px;
+  border-radius: 14px;
+  margin-right: 15px;
+}
+#creatorLink {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.cardStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.cardStats #nftPrice {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--cyan);
+}
+
+.cardStats #nftTimer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 100px;
+  font-size: 14px;
+}
+.cardStats #nftPrice #pricePic {
+  margin-right: 6px;
+  align-self: center;
+}
+
+.cardFooter {
+  color: var(--softBlue);
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  border-top: 1px solid var(--darkBlueLine);
+  margin-top: 6px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 6px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
